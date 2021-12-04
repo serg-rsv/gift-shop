@@ -59,6 +59,19 @@ ul {
   margin: 0 auto;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-hero {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-box {
   display: flex;
   justify-content: space-between;
@@ -94,4 +107,33 @@ ul {
 .header-logo img {
   display: block;
   line-height: 0;
+}
+
+/* ========================Hero section========================== */
+
+.hero-shell {
+  background-color: #f1f1f2;
+  width: 50%;
+  padding-top: 154px;
+  padding-bottom: 135px;
+  padding-left: 162px;
+  padding-right: 126px;
+}
+
+.hero-shell .title {
+  font-size: 56px;
+  line-height: 1.23;
+
+  color: #000000;
+
+  margin-bottom: 36px;
+}
+
+.hero-shell p {
+  margin-bottom: 52px;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: #fff;
 }
