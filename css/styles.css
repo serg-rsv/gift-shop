@@ -10,3 +10,88 @@ body {
   line-height: 1.4;
   color: #000000;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  background-color: #fff;
+
+  border: 1px solid var(--accent-color);
+  box-sizing: content-box;
+  border-radius: 5px;
+  cursor: pointer;
+
+  padding: 14px 24px;
+}
+
+.header {
+  background-color: var(--section-color);
+}
+
+.container-header {
+  width: 1440px;
+  padding-left: 80px;
+  padding-right: 34px;
+  margin: 0 auto;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list .nav-item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #000000;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 433px;
+}
+
+.header-logo img {
+  display: block;
+  line-height: 0;
+}
