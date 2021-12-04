@@ -70,6 +70,7 @@ ul {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  background-color: #f1f1f2;
 }
 
 .header-box {
@@ -112,7 +113,6 @@ ul {
 /* ========================Hero section========================== */
 
 .hero-shell {
-  background-color: #f1f1f2;
   width: 50%;
   padding-top: 154px;
   padding-bottom: 135px;
