@@ -51,11 +51,6 @@ img {
   font-size: 32px;
 }
 
-.container__subtitle {
-  font-size: 24px;
-  font-weight: 600;
-}
-
 .button {
   display: inline-flex;
   padding: 14px 24px;
@@ -273,7 +268,85 @@ img {
 /* ========== promo-section End ============ */
 
 /* ========== blogs Start ========== */
+.blog-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 88px;
+}
+
+.blog-section__title {
+  margin-bottom: 24px;
+}
+
+.blog-section__text {
+  margin-bottom: 72px;
+}
+
+.blog-baner {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: var(--second-color);
+}
+
+.top-blog {
+  padding: 63px 88px 32px 78px;
+}
+
+.top-blog__author {
+  margin-bottom: 27px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #fff;
+}
+
+.top-blog__title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.top-blog__link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.blog-list {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.blog-card {
+  padding: 48px;
+}
+
+.blog-card:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.blog-card:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blog-card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.blog-card__text {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.blog-card__link {
+  font-size: 14px;
+  color: #000;
+}
 /* ========== blogs End ============ */
 
 /* ========== footer Start ========== */
-/* ========== footer End ============ */
+/* ========== footer End ============ */ ;
