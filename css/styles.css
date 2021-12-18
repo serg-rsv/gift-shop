@@ -2,10 +2,13 @@
   --accent-color: #f7941e;
   --second-color: #231f20;
   --section-color: #fafafa;
+  --section-second-color: #f1f1f2;
+
+  --font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
   line-height: 1.4;
   color: #000000;
@@ -21,6 +24,8 @@ ul,
 p {
   margin: 0;
   padding: 0;
+
+  font-weight: 400;
 }
 
 a {
@@ -31,19 +36,30 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 /* Shared classes */
 .container {
   width: 1200px;
-  padding: 80px 15px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .container__title {
   font-size: 32px;
 }
 
+.container__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .button {
+  display: inline-flex;
   padding: 14px 24px;
-  font-family: Roboto;
+  font-family: var(--font-family);
   font-size: 18px;
   line-height: 1.2;
 
@@ -106,18 +122,27 @@ ul {
 /* ========== Header End ============ */
 
 /* ========== Hero section Start ========== */
+.hero-section {
+  background-color: var(--section-second-color);
+}
+
+.hero-section__container {
+  display: flex;
+  overflow: visible;
+}
+
 .hero-shell {
-  background-color: #f1f1f2;
-  width: 50%;
+  min-width: 50%;
   padding-top: 154px;
   padding-bottom: 135px;
-  padding-left: 162px;
-  padding-right: 126px;
+  padding-left: 0;
+  padding-right: 120px;
 }
 
 .hero-shell .title {
   font-size: 56px;
   line-height: 1.23;
+  font-weight: 500;
 
   color: #000000;
 
@@ -135,13 +160,117 @@ ul {
 /* ========== Hero section End ============ */
 
 /* ========== Section "how-we-work" Start ========== */
+.how-we-work {
+  background-color: var(--section-second-color);
+}
+
+.how-we-work__container {
+  display: flex;
+  overflow: visible;
+  flex-direction: row-reverse;
+}
+
+.how-we-work__shell {
+  min-width: 50%;
+  padding: 164px 0 104px 104px;
+}
+
+.how-we-work__title,
+.how-we-work__text {
+  margin-bottom: 36px;
+  text-align: justify;
+}
+
+.how-we-work__btn {
+  background-color: var(--section-second-color);
+}
 /* ========== Section "how-we-work" End ============ */
 
-/* ========== gift suggestions Start ========== */
-/* ========== gift suggestions End ============ */
+/* ========== occasion-section Start ========== */
+.occasion-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 137px;
+}
 
-/* ========== promo Start ========== */
-/* ========== promo End ============ */
+.occasion-section__text {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.occasion-set {
+  display: flex;
+}
+
+.occasion-card {
+  background-color: var(--section-color);
+}
+
+.occasion-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.occasion-card:hover {
+  background-color: #fff;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.occasion-card__meta {
+  padding: 24px;
+}
+
+.occasion-card__title {
+  font-size: 20px;
+  margin-bottom: 74px;
+}
+
+.occasion-card__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+/* ========== occasion-section End ============ */
+
+/* ========== promo-section Start ========== */
+.promo {
+  background-color: var(--accent-color);
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 81px 0;
+}
+
+.promo__title {
+  font-size: 32px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.promo__slogan {
+  font-size: 32px;
+}
+
+.promo__btns {
+  display: flex;
+}
+
+.promo__btn {
+  color: #000;
+  border-color: #000;
+  background-color: var(--accent-color);
+}
+
+.promo__btn--inverse {
+  margin-right: 16px;
+  color: #fff;
+  background-color: #000;
+}
+/* ========== promo-section End ============ */
 
 /* ========== blogs Start ========== */
 /* ========== blogs End ============ */
