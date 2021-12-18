@@ -1,165 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gift Shop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container-header">
-      <div class="header-box">
-        <nav class="nav">
-          <a href="./" class="header-logo"><img src="./images/logo.svg" alt="logo" /></a>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="button">Gift Finder</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero section -->
-    <section>
-      <div>
-        <h1>Find a gift for your wife or girlfriend</h1>
-        <p>
-          Struggling to find a gift for your wife or girlfriend? No problem!
-        </p>
-        <button type="button">Find gift now</button>
-      </div>
-      <img src="./images/hero.jpg" alt="Married couple" width="719px" />
-    </section>
-
-    <!-- Section "how-we-work"-->
-    <section>
-      <img src="./images/our-work.jpg" alt="how we work" width="719px" />
-      <div>
-        <h2>How we work</h2>
-        <p>
-          We’ve actually already asked hundreds of women what they want, and
-          made a database with the results. All you have to do is take our
-          short survey that only takes seconds, and our proprietary algorithm
-          will match you with a few perfect gift options.
-        </p>
-        <a href="#">Learn More</a>
-      </div>
-    </section>
-    <!-- gift suggestions -->
-    <section>
-      <!-- < <h2>Gifts for all Occasions</h2>
-        <p>“Try our web app to find the best gifts for all occasions”</p>> -->
-      <ul>
-        <li>
-          <img src="./images/gift1.jpg" alt="happy birthday baloon" width="270" />
-          <h3>Birthday</h3>
-          <a href="#">See More</a>
-        </li>
-        <li>
-          <img src="./images/gift2.jpg" alt="gift combo" width="270" />
-          <h3>Anniversary</h3>
-          <a href="#">See More</a>
-        </li>
-        <li>
-          <img src="./images/gift3.jpg" alt="kiss me label" width="270" />
-          <h3>Valentine's Day</h3>
-          <a href="#">See More</a>
-        </li>
-        <li>
-          <img src="./images/gift4.jpg" alt="xmas tree with a toy" width="270" />
-          <h3>Christmas</h3>
-          <a href="#">See More</a>
-        </li>
-      </ul>
-    </section>
-    <!-- promo -->
-    <section>
-      <div>
-        <h2>Ready to get started?</h2>
-        <p>Sign up or contact us</p>
-      </div>
-      <ul>
-        <li><a href="#">Find gift now</a></li>
-        <li><a href="#">how it works</a></li>
-      </ul>
-    </section>
-    <!-- blogs -->
-    <section>
-      <h2>Our Best Blogs Ever</h2>
-      <p>
-        “Try our blog to find the best tips and tricks to select your gift”
-      </p>
-      <div>
-        <img src="./images/merrid-couple.jpg" alt="merrid-couple" width="400" height="370" />
-        <div>
-          <p>Mr. John Doe</p>
-          <h2>The best way to wish your wife</h2>
-          <a href="#">Read More</a>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container-header">
+        <div class="header-box">
+          <nav class="nav">
+            <a href="./" class="header-logo"
+              ><img src="./images/logo.svg" alt="logo"
+            /></a>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button">Gift Finder</button>
         </div>
       </div>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="container hero-section__container">
+          <div class="hero-shell">
+            <h1 class="title">Find a gift for your wife or girlfriend</h1>
+            <p>
+              Struggling to find a gift for your wife or girlfriend? No problem!
+            </p>
+            <button type="button" class="button hero-button">
+              Find gift now
+            </button>
+          </div>
+
+          <img src="./images/hero.jpg" alt="Married couple" width="719px" />
+        </div>
+      </section>
+
+      <!-- Section "how-we-work"-->
+      <section class="how-we-work">
+        <div class="container how-we-work__container">
+          <div class="how-we-work__shell">
+            <h2 class="container__title how-we-work__title">How we work</h2>
+            <p class="how-we-work__text">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <a class="button how-we-work__btn" href="#">Learn More</a>
+          </div>
+          <img src="./images/our-work.jpg" alt="how we work" width="719px" />
+        </div>
+      </section>
+      <!-- occasion-section -->
+      <section class="occasion-section">
+        <div class="container occasion-section__container">
+          <h2 class="container__title">Gifts for all Occasions</h2>
+          <p class="occasion-section__text">
+            “Try our web app to find the best gifts for all occasions”
+          </p>
+
+          <ul class="occasion-set">
+            <li class="occasion-card">
+              <img
+                src="./images/gift1.jpg"
+                alt="happy birthday baloon"
+                width="270"
+              />
+              <div class="occasion-card__meta">
+                <h3 class="occasion-card__title">Birthday</h3>
+                <a class="occasion-card__link" href="#">See More ›</a>
+              </div>
+            </li>
+            <li class="occasion-card">
+              <img src="./images/gift2.jpg" alt="gift combo" width="270" />
+              <div class="occasion-card__meta">
+                <h3 class="occasion-card__title">Anniversary</h3>
+                <a class="occasion-card__link" href="#">See More ›</a>
+              </div>
+            </li>
+            <li class="occasion-card">
+              <img src="./images/gift3.jpg" alt="kiss me label" width="270" />
+              <div class="occasion-card__meta">
+                <h3 class="occasion-card__title">Valentine's Day</h3>
+                <a class="occasion-card__link" href="#">See More ›</a>
+              </div>
+            </li>
+            <li class="occasion-card">
+              <img
+                src="./images/gift4.jpg"
+                alt="xmas tree with a toy"
+                width="270"
+              />
+              <div class="occasion-card__meta">
+                <h3 class="occasion-card__title">Christmas</h3>
+                <a class="occasion-card__link" href="#">See More ›</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- promo-section -->
+      <section class="promo">
+        <div class="container promo__container">
+          <div>
+            <h2 class="promo__title">Ready to get started?</h2>
+            <p class="promo__slogan">Sign up or contact us</p>
+          </div>
+          <ul class="promo__btns">
+            <li>
+              <a class="button promo__btn--inverse" href="#">Find gift now</a>
+            </li>
+            <li><a class="button promo__btn" href="#">how it works</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- blogs -->
+      <section class="blog-section">
+        <div class="container blog-section__container">
+          <h2 class="container__title blog-section__title">
+            Our Best Blogs Ever
+          </h2>
+          <p class="blog-section__text">
+            “Try our blog to find the best tips and tricks to select your gift”
+          </p>
+          <div class="blog-baner">
+            <img
+              src="./images/merrid-couple.jpg"
+              alt="merrid-couple"
+              width="400"
+              height="370"
+            />
+            <div class="top-blog">
+              <p class="top-blog__author">Mr. John Doe</p>
+              <h2 class="top-blog__title">The best way to wish your wife</h2>
+              <a class="top-blog__link" href="#">Read More</a>
+            </div>
+          </div>
+          <ul class="blog-list">
+            <li class="blog-card">
+              <h3 class="blog-card__title">
+                Database to find the gifts for your girlfriend
+              </h3>
+              <p class="blog-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a class="blog-card__link" href="#">Read More</a>
+            </li>
+            <li class="blog-card">
+              <h3 class="blog-card__title">
+                How Artificial Intelligence read your mind to find the best gift
+              </h3>
+              <p class="blog-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a class="blog-card__link" href="#">Read More</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- footer -->
       <ul>
         <li>
-          <h3>Database to find the gifts for your girlfriend</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore...
-          </p>
-          <a href="#">Read More</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <h3>
-            How Artificial Intelligence read your mind to find the best gift
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore...
-          </p>
-          <a href="#">Read More</a>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/logo-orange.svg"
+              alt="logo-footer"
+              width="41px"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">Service</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
         </li>
       </ul>
-    </section>
-  </main>
-
-  <footer>
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="">About</a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="./images/logo-orange.svg" alt="logo-footer" width="41px" />
-        </a>
-      </li>
-      <li>
-        <a href="#">Service</a>
-      </li>
-      <li>
-        <a href="#">Blog</a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
+      <ul class="social-list">
+        <li class="social">
+          <a href="" class="social__link">
+            <svg class="social__icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social">
+          <a href="" class="social__link">
+            <svg class="social__icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social">
+          <a href="" class="social__link">
+            <svg class="social__icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social">
+          <a href="" class="social__link">
+            <svg class="social__icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social">
+          <a href="" class="social__link">
+            <svg class="social__icon">
+              <use></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p>© 2010 — 2020</p>
+      <p>Privacy — Terms</p>
+    </footer>
+  </body>
 </html>

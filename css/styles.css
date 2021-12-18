@@ -2,10 +2,13 @@
   --accent-color: #f7941e;
   --second-color: #231f20;
   --section-color: #fafafa;
+  --section-second-color: #f1f1f2;
+
+  --font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-size: 20px;
   line-height: 1.4;
   color: #000000;
@@ -21,6 +24,8 @@ ul,
 p {
   margin: 0;
   padding: 0;
+
+  font-weight: 400;
 }
 
 a {
@@ -31,29 +36,37 @@ ul {
   list-style: none;
 }
 
-.button { 
-  position: absolute;
-width: 136px;
-height: 30px;
-left: 732px;
-top: 440px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 30px;
-  position: absolute;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
-
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+img {
+  display: block;
 }
 
+/* Shared classes */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container__title {
+  font-size: 32px;
+}
+
+.button {
+  display: inline-flex;
+  padding: 14px 24px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: var(--accent-color);
+  background-color: var(--section-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+/* ========== Header Start ========== */
 .header {
   background-color: var(--section-color);
 }
@@ -63,20 +76,6 @@ border-radius: 4px;
   padding-left: 80px;
   padding-right: 34px;
   margin: 0 auto;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container-hero {
-  width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: #f1f1f2;
 }
 
 .header-box {
@@ -89,6 +88,16 @@ border-radius: 4px;
 .nav {
   display: flex;
   align-items: center;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 433px;
+}
+
+.header-logo img {
+  display: block;
+  line-height: 0;
 }
 
 .nav-list {
@@ -105,30 +114,30 @@ border-radius: 4px;
 
   color: #000000;
 }
+/* ========== Header End ============ */
 
-.header-logo {
-  display: block;
-  margin-right: 433px;
+/* ========== Hero section Start ========== */
+.hero-section {
+  background-color: var(--section-second-color);
 }
 
-.header-logo img {
-  display: block;
-  line-height: 0;
+.hero-section__container {
+  display: flex;
+  overflow: visible;
 }
-
-/* ========================Hero section========================== */
 
 .hero-shell {
-  width: 50%;
+  min-width: 50%;
   padding-top: 154px;
   padding-bottom: 135px;
-  padding-left: 162px;
-  padding-right: 126px;
+  padding-left: 0;
+  padding-right: 120px;
 }
 
 .hero-shell .title {
   font-size: 56px;
   line-height: 1.23;
+  font-weight: 500;
 
   color: #000000;
 
@@ -143,3 +152,201 @@ border-radius: 4px;
   background-color: var(--accent-color);
   color: #fff;
 }
+/* ========== Hero section End ============ */
+
+/* ========== Section "how-we-work" Start ========== */
+.how-we-work {
+  background-color: var(--section-second-color);
+}
+
+.how-we-work__container {
+  display: flex;
+  overflow: visible;
+  flex-direction: row-reverse;
+}
+
+.how-we-work__shell {
+  min-width: 50%;
+  padding: 164px 0 104px 104px;
+}
+
+.how-we-work__title,
+.how-we-work__text {
+  margin-bottom: 36px;
+  text-align: justify;
+}
+
+.how-we-work__btn {
+  background-color: var(--section-second-color);
+}
+/* ========== Section "how-we-work" End ============ */
+
+/* ========== occasion-section Start ========== */
+.occasion-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 137px;
+}
+
+.occasion-section__text {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.occasion-set {
+  display: flex;
+}
+
+.occasion-card {
+  background-color: var(--section-color);
+}
+
+.occasion-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.occasion-card:hover {
+  background-color: #fff;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.occasion-card__meta {
+  padding: 24px;
+}
+
+.occasion-card__title {
+  font-size: 20px;
+  margin-bottom: 74px;
+}
+
+.occasion-card__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+/* ========== occasion-section End ============ */
+
+/* ========== promo-section Start ========== */
+.promo {
+  background-color: var(--accent-color);
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 81px 0;
+}
+
+.promo__title {
+  font-size: 32px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.promo__slogan {
+  font-size: 32px;
+}
+
+.promo__btns {
+  display: flex;
+}
+
+.promo__btn {
+  color: #000;
+  border-color: #000;
+  background-color: var(--accent-color);
+}
+
+.promo__btn--inverse {
+  margin-right: 16px;
+  color: #fff;
+  background-color: #000;
+}
+/* ========== promo-section End ============ */
+
+/* ========== blogs Start ========== */
+.blog-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 88px;
+}
+
+.blog-section__title {
+  margin-bottom: 24px;
+}
+
+.blog-section__text {
+  margin-bottom: 72px;
+}
+
+.blog-baner {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: var(--second-color);
+}
+
+.top-blog {
+  padding: 63px 88px 32px 78px;
+}
+
+.top-blog__author {
+  margin-bottom: 27px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #fff;
+}
+
+.top-blog__title {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.top-blog__link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.blog-list {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.blog-card {
+  padding: 48px;
+}
+
+.blog-card:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.blog-card:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blog-card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.blog-card__text {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.blog-card__link {
+  font-size: 14px;
+  color: #000;
+}
+/* ========== blogs End ============ */
+
+/* ========== footer Start ========== */
+/* ========== footer End ============ */ ;
