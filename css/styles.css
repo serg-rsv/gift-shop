@@ -31,29 +31,31 @@ ul {
   list-style: none;
 }
 
-.button { 
-  position: absolute;
-width: 136px;
-height: 30px;
-left: 732px;
-top: 440px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 30px;
-  position: absolute;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
-
-background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+/* Shared classes */
+.container {
+  width: 1200px;
+  padding: 80px 15px;
 }
 
+.container__title {
+  font-size: 32px;
+}
+
+.button {
+  padding: 14px 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: var(--accent-color);
+  background-color: var(--section-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+/* ========== Header Start ========== */
 .header {
   background-color: var(--section-color);
 }
@@ -77,6 +79,16 @@ border-radius: 4px;
   align-items: center;
 }
 
+.header-logo {
+  display: block;
+  margin-right: 433px;
+}
+
+.header-logo img {
+  display: block;
+  line-height: 0;
+}
+
 .nav-list {
   display: flex;
 }
@@ -91,13 +103,48 @@ border-radius: 4px;
 
   color: #000000;
 }
+/* ========== Header End ============ */
 
-.header-logo {
-  display: block;
-  margin-right: 433px;
+/* ========== Hero section Start ========== */
+.hero-shell {
+  background-color: #f1f1f2;
+  width: 50%;
+  padding-top: 154px;
+  padding-bottom: 135px;
+  padding-left: 162px;
+  padding-right: 126px;
 }
 
-.header-logo img {
-  display: block;
-  line-height: 0;
+.hero-shell .title {
+  font-size: 56px;
+  line-height: 1.23;
+
+  color: #000000;
+
+  margin-bottom: 36px;
 }
+
+.hero-shell p {
+  margin-bottom: 52px;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+/* ========== Hero section End ============ */
+
+/* ========== Section "how-we-work" Start ========== */
+/* ========== Section "how-we-work" End ============ */
+
+/* ========== gift suggestions Start ========== */
+/* ========== gift suggestions End ============ */
+
+/* ========== promo Start ========== */
+/* ========== promo End ============ */
+
+/* ========== blogs Start ========== */
+/* ========== blogs End ============ */
+
+/* ========== footer Start ========== */
+/* ========== footer End ============ */
