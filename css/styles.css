@@ -351,6 +351,10 @@ img {
 /* ========== blogs End ============ */
 
 /* ========== footer Start ========== */
+footer {
+  background-color: var(--section-color);
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
